@@ -1,0 +1,57 @@
+                                 PROGRAM WITH C
+                                 in plain text.
+
+    #include <stdio.h>
+    
+    int main() {
+        puts("Hello, World.");
+        return 0;
+    }
+
+Read that above code; it's a program that compiles and runs.  After you read
+that code, read the text below that explains it.
+
+If some of the terms in this section are confusing, don't worry about it.  I'll
+share the meanings of these terms very soon, and you can come back to read this
+short section again.  I think you should read this section in its entirety be-
+fore you go looking for definitions, then come back to it later if you need to.
+
+The basic structure of a minimal C program that actually does something when
+you execute it from the command line is pretty simple.
+
+    #include <stdio.h>
+
+The `#include` directive tells the C compiler to include some code from an ex-
+ternal file in your program when you compile it.  The less-than and greater-
+than symbols are used to specify what library the compiler should include, and
+`stdio.h` is the name of a header file for that library.
+
+    int main() {
+
+When you execute a function, it might return a value.  That means it produces some kind of meaningful output within the program, and that output can be used in other code.  In the case of the `main()` function, though, that value generally goes to the process that executes your program, and gives that process some information about whether the program operated as expected or not.  The `int` in this identifies the type of return value, where `int` means the return value is an integer.
+
+As you might have realized already, the `main()` function is special.  It is the
+starting point of a program, and any other functions must be called from the
+`main()` function, or from functions called in `main()`, and so on down the
+line.  It is the ultimate ancestor of all other function calls in the program.
+
+The brace at the end just opens a block of code that defines the behavior of the
+`main()` function.
+
+        puts("Hello, World.");
+
+The `puts()` function is defined in the `stdio` library.  It prints its argument
+to STDOUT, or Standard Output, which usually means the shell.  It also prints a
+newline character at the end of its argument.  `"Hello, World."` is the string
+argument for `puts()` in this case.  The semicolon just tells the compiler it
+has reached the end of a code statement.
+
+        return 0;
+
+This is where the default return value of `main()` gets defined.  In the Unix
+world, it is typical to use the integer `0` as a return value meaning nothing is
+wrong, and to use some other integer value to indicate there was an error.
+
+    }
+
+Finally, we get the brace that closes the `main()` function's code block.
