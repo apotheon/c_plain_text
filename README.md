@@ -4,4 +4,4 @@ This is a book (in progress).
 
 [LICENSE](/doc/trunk/LICENSE)
 
-[Fossil Repository](https://fossrec.com/u/apotheon/minutils)
+[Fossil Repository](https://fossrec.com/u/apotheon/c_plain_text)
