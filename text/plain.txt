@@ -28,7 +28,13 @@ than symbols are used to specify what library the compiler should include, and
 
     int main() {
 
-When you execute a function, it might return a value.  That means it produces some kind of meaningful output within the program, and that output can be used in other code.  In the case of the `main()` function, though, that value generally goes to the process that executes your program, and gives that process some information about whether the program operated as expected or not.  The `int` in this identifies the type of return value, where `int` means the return value is an integer.
+When you execute a function, it might return a value.  That means it produces
+some kind of meaningful output within the program, and that output can be used
+in other code.  In the case of the `main()` function, though, that value gener-
+ally goes to the process that executes your program, and gives that process some
+information about whether the program operated as expected or not.  The `int` in
+this identifies the type of return value, where `int` means the return value is
+an integer.
 
 As you might have realized already, the `main()` function is special.  It is the
 starting point of a program, and any other functions must be called from the
